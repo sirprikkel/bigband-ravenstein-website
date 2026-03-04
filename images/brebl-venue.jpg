@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <link rel="stylesheet" type="text/css" href="https://www.brebl.nl/theme/css/style.css" />    <link rel="stylesheet" type="text/css" href="https://www.brebl.nl/theme/font/font.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MMK01PMMHC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MMK01PMMHC')
+
+        ;
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NP65P6FJ');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KK92KDLXF3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KK92KDLXF3');
+    </script>
+    <script>
+    function onSubmit(token) {
+        document.getElementById("form").submit();
+    }
+    </script>  <title></title>
+    <meta charset="UTF-8">
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="">
+    <meta name="language" content="NL">
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="7 days">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://www.brebl.nl/upload/image/page/page_1558339731_.jpeg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@BREBL">
+    <meta name="twitter:creator" content="@BREBL">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://www.brebl.nl/upload/image/page/page_1558339731_.jpeg">     <link rel="apple-touch-icon"
+        href="https://www.brebl.nl/upload/image/page/settings_1558684508_apple_touch_icon_180px.png" />
+    <link rel="apple-touch-icon" sizes="72x72"
+        href="https://www.brebl.nl/upload/image/page/settings_1558684333_apple_touch_icon_75px.png" />
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="https://www.brebl.nl/upload/image/page/settings_1560849646_apple_touch_icon_114px.png" />
+    <link rel="apple-touch-startup-image"
+        href="https://www.brebl.nl/upload/image/page/settings_1558684508_apple_touch_icon_180px.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.brebl.nl/theme/css/jquery-eu-cookie-law-popup.css" />
+    <script src="https://www.brebl.nl/theme/js/jquery-eu-cookie-law-popup.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.brebl.nl/theme/css/jquery-eu-cookie-law-popup.css" />
+    <script src="https://www.brebl.nl/theme/js/jquery-eu-cookie-law-popup.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdyQ9QZAAAAALCwfDY1H8kROQv9BYDikpuG6fDK"></script>
+    <script>
+    function onSubmit(token) {
+        document.getElementById("mobiel-form").submit();
+    }
+
+    function onSubmit(token) {
+        document.getElementById("desktop-form").submit();
+    }
+    </script>
+
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://static-assets.mapbox.com/gl-pricing/dist/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://www.brebl.nl/theme//js/responsiveslides.min.js"></script>
+    <link rel="stylesheet" href="https://www.brebl.nl/theme//css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Modernizr -->
+    <style>
+    body {
+        background-image: url(https://www.brebl.nl//theme/img/bg/brebl-stripes-480px-zwart.png);
+        background-color: #212527;
+    }
+
+    .bgImgBox::before {
+        content: "";
+        background-image: url(https://www.brebl.nl//theme/img/bg/brebl-stripes-480px-zwart.png);
+        height: 700px;
+        opacity: 0.2;
+        width: 100%;
+
+        background-position-x: 75px;
+            display: block;
+    }
+
+    .bgImgBox {
+        ;     }
+    </style>
+</head>
+
+<body class="eupopup eupopup-top thema1 wp-content ">
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP65P6FJ"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <div class="bgImgBox" style="background-image:url(https://www.brebl.nl/upload/image/page/page_1558339731_.jpeg); "></div> 
+
+
+
+          <div class="socialmediabox wit">
+                                   <a class="smLink facebook" target="_blank" href="https://facebook.com/breblen"><i class="fab fa-facebook-f"></i></a>
+                              
+                                   <a class="smLink instagram" target="_blank" href="https://www.instagram.com/breblen/"><i class="fab fa-instagram"></i></i></a>
+                              
+               
+               
+          </div>
+          <main>
+          <header class="site-header nav">
+               <div class="container">
+                    <div class="logo"><a href="https://www.brebl.nl/"><img src="https://www.brebl.nl/theme/img/overige/logo@0.75x.png" width="180" alt=""></a></div>
+                    <nav class="main-nav">
+                         <ul class="main-menu-list">
+                              <li class="main-menu nav-itum"><a href="https://www.brebl.nl/brebl-en" class="main-menu-link nav-itum-link">over brebl</a></li>
+                              <li class="main-menu nav-itum"><a href="https://www.brebl.nl/zaalverhuur" class="main-menu-link nav-itum-link">zaalverhuur</a></li>
+                              <li class="main-menu nav-itum"><a href="https://www.brebl.nl/agenda" class="main-menu-link nav-itum-link">agenda</a></li>
+                              <li class="main-menu nav-itum"><a href="https://www.brebl.nl/info" class="main-menu-link nav-itum-link">info</a>
+                                   <ul class="sup-menu">
+                                   <li class="main-menu sub-nav-itum"><a href="https://www.brebl.nl/info/Komen" class="main-menu-link nav-itum-link">Bereikbaarheid</a><li class="main-menu sub-nav-itum"><a href="https://www.brebl.nl/info/archief" class="main-menu-link nav-itum-link">Archief</a><li class="main-menu sub-nav-itum"><a href="https://www.brebl.nl/info/tickets-kopen" class="main-menu-link nav-itum-link">Tickets kopen</a><li class="main-menu sub-nav-itum"><a href="https://www.brebl.nl/info/privacy" class="main-menu-link nav-itum-link">Privacy</a><li class="main-menu sub-nav-itum"><a href="https://www.brebl.nl/info/stichting-breblen" class="main-menu-link nav-itum-link">Stichting Breblen</a><li class="main-menu sub-nav-itum"><a href="https://www.brebl.nl/info/doneer" class="main-menu-link nav-itum-link">Doneer</a><li class="main-menu sub-nav-itum"><a href="https://www.brebl.nl/info/technische-specificaties" class="main-menu-link nav-itum-link">Technische specificaties</a><li class="main-menu sub-nav-itum"><a href="https://www.brebl.nl/info/interactieve-jazz-object" class="main-menu-link nav-itum-link">Brebl-O-Phone</a><li class="main-menu sub-nav-itum"><a href="https://www.brebl.nl/info/jhoost" class="main-menu-link nav-itum-link">Giant Steps</a><li class="main-menu sub-nav-itum"><a href="https://www.brebl.nl/info/inhetparadijs" class="main-menu-link nav-itum-link">Elysio, het nieuwe podium in het paradijs op Park Winkelsteeg</a>   
+                                   </ul>
+
+                              </li>
+                              <li class="main-menu nav-itum"><a href="https://www.brebl.nl/contact" class="main-menu-link nav-itum-link">contact</a></li>
+                              <li class="main-menu nav-itum"><button class="zoekknop"><i class="fas fa-search"></i></button></li>
+                         </ul>
+                    </nav>
+               </div>
+          </header>
+          <header class="site-header zoeken">
+               <div class="container zoeken">
+                    <form action="https://www.brebl.nl/zoeken" method="post">
+                         <input type="search" name="zoken" class="zoeken input-text">
+                         <button type="submit" class="zoekBT"><i class="fas fa-search"></i></button> 
+                    </form>
+               </div>
+          </header>
+          <div class="snelzoeken" style="display: none;">
+
+               <button class="close" onclick="sluitZoeken()"><i class="fas fa-times"></i></button>
+               <h6>Zoek op genre</h6>
+               
+               <form action="zoeken" ction="https://www.brebl.nl/zoeken" method="post">
+               </form>    
+               <a href="https://www.brebl.nl/zoeken/id/2" class="bt4">Dans</a> <a href="https://www.brebl.nl/zoeken/id/3" class="bt4">Woord</a> <a href="https://www.brebl.nl/zoeken/id/4" class="bt4">Theater</a> <a href="https://www.brebl.nl/zoeken/id/5" class="bt4">Film</a> <a href="https://www.brebl.nl/zoeken/id/6" class="bt4">Live muziek</a> <a href="https://www.brebl.nl/zoeken/id/7" class="bt4">Party</a> <a href="https://www.brebl.nl/zoeken/id/8" class="bt4">Beeldend</a> <a href="https://www.brebl.nl/zoeken/id/9" class="bt4">Kids</a> <a href="https://www.brebl.nl/zoeken/id/10" class="bt4">Evenement</a> <a href="https://www.brebl.nl/zoeken/id/11" class="bt4">Divers</a> </br><a href="https://www.brebl.nl/zoeken/subid/1" class="bt4">Pop</a><a href="https://www.brebl.nl/zoeken/subid/4" class="bt4">Poëzie</a><a href="https://www.brebl.nl/zoeken/subid/7" class="bt4">Kleinkunst</a><a href="https://www.brebl.nl/zoeken/subid/2" class="bt4">Jazz</a><a href="https://www.brebl.nl/zoeken/subid/6" class="bt4">Festival</a><a href="https://www.brebl.nl/zoeken/subid/8" class="bt4">Expositie</a><a href="https://www.brebl.nl/zoeken/subid/3" class="bt4">Dansen</a><a href="https://www.brebl.nl/zoeken/subid/5" class="bt4">Clubnacht</a>              
+                
+          </div>
+          
+     
+     
+<script type="text/javascript">
+     $("label.drop-icon").click(function(){
+          $("label.drop-icon").toggleClass("drop-icon1");
+      //    $("label.drop-icon").removeClass("drop-icon");
+     });
+    
+</script>          <div class="titelBox"><h1><span>404 error pagina niet gevonden</h1></span></div>
+          
+          <div class="content">
+              
+               
+               <p class="Intro_text"></p>
+               <p><h4 class="notfound">Sorry, we kunnen deze pagina niet meer vinden</h4>
+<p class="notfound">We hebben ons best gedaan, maar het lijkt erop dat deze pagina niet (meer) bestaat of misschien verhuisd is.</p>
+<p class="notfound"> </p>
+<p class="notfound">Je kunt natuurlijk altijd naar de <a href="../">homepage</a> of de <a class="zoekknop" href="#">zoekfunctie</a> gebruiken.</p></p>
+          </div>
+
+     
+     </main>
+          <div class="tap rechterkant">
+          
+
+
+          <a class="tapLink linkthema0" href="https://www.brebl.nl/nieuwsbrief">nieuwsbrief</a>
+          <a class="tapLink linkthema0" href="https://www.brebl.nl/nieuwsbrief">nieuwsbrief</a>
+         
+ 
+      </div>
+          <footer>
+          <div class="leurbox wit"></div>
+
+          <div class="footer_box">
+                    &copy; Brebl 2026 - Brebl, het cultuurcentrum, cultuur en zaalverhuur, Honig, Nijmegen | <a class="navbar-brand" href="https://www.brebl.nl/disclaimer ">disclaimer</a> | <a class="navbar-brand" href="https://www.brebl.nl/privacy-statement ">privacy statement</a> | <a class="navbar-brand" href="https://www.brebl.nl/colofon ">colofon</a>
+                   
+              
+                </div>
+     </footer>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script>
+   $('.verhuurContent').hide();
+   $(".verhuurimg").addClass( "small" );
+   $(".verhuurimg").removeClass( "plus" );
+     $(".verhuurbox").click(function(){
+          $('.verhuurContent').hide();
+          $(".verhuurimg.plus").addClass( "small" );
+          $(".verhuurimg").removeClass( "plus" );
+                     
+                   
+          var id1 = this.id;
+          var id2 = "#"+id1+" .verhuurContent";
+         $(id2).show();
+         $("#"+id1+" .verhuurimg").removeClass( "small" );
+         $("#"+id1+" .verhuurimg").addClass( "plus" );
+
+         // alert(id2)
+     });
+     function sluitZoeken(){
+          $('.site-header.zoeken').hide();
+          $('.site-header.nav').show();
+          $('.snelzoeken').hide();
+     }
+     function sluitZoekenMobiel(){
+          $('.mobiel.zoeken').hide();
+          $('.mobiel.nav').show();
+          $('.snelzoeken').hide();
+     }
+     $('.mobiel.zoeken').hide();
+     $('.site-header.zoeken').hide();
+     $(".zoekknop").click(function() {
+          $('.site-header.zoeken').show();
+          $('.site-header.nav').hide();
+          $('.snelzoeken').show();
+          $('.mobiel.zoeken').show();
+     });
+     
+     $(".navopen").click(function() {
+          $('.mobiel-nav').slideToggle("fast");
+          
+
+     });
+    
+     
+       
+     function init() {
+          window.addEventListener('scroll', function(e){
+               var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+               shrinkOn = 30,
+               header = document.querySelector("header");
+               if (distanceY > shrinkOn) {
+                    $('.site-header').addClass('sticky-header');
+                    $('.snelzoeken').addClass('sticky-snelzoeken');
+                    $("body").css({"margin-top":"96px"});
+                    $("ul.rslides_tabs.rslides1_tabs").css({"top":"283px"});
+               } else {
+                    $('.sticky-snelzoeken').removeClass('sticky-snelzoeken');
+                    $('.sticky-header').removeClass('sticky-header');
+                    $("body").css({"margin-top":"0px"});
+                    $("ul.rslides_tabs.rslides1_tabs").css({"top":"373px"});
+               }
+          });
+     }
+     window.onload = init();
+  
+     
+     var wrap = $("header");
+                   
+if ( window.location.hash ) {
+    var hash = window.location.hash,
+        $hash = $(hash);
+ 
+    $hash.removeAttr('id');
+    $hash.before('<div id="'+hash.slice(1)+'" class="hashlink"></div>');
+    window.location.hash = hash;
+
+
+/* Captures click events on all anchor tag with a hash tag */
+$(document).on('click', 'a[href^="#"]', function(event) {
+  // Click events are captured before hashchanges. Timeout
+  // causes offsetAnchor to be called after the page jump.
+  window.setTimeout(function() {
+    offsetAnchor();
+  }, 0);
+});
+
+window.setTimeout(offsetAnchor, 0);
+}
+</script>
+
+
+</body>
+</html>
