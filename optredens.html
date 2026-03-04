@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optredens – Bigband Ravenstein</title>
+  <meta name="description" content="Aankomende optredens van Bigband Ravenstein. Jazz festivals, jazzclubs en meer in Oost-Brabant.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="5a91d733-a2f0-40d6-a7c8-1c56af797db0"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#7C3AED', 'primary-dark': '#4C1D95', secondary: '#A78BFA', cta: '#22C55E', 'cta-hover': '#16A34A', dark: '#0F0A1E', 'dark-card': '#1A1030', accent: '#FFAA00', pink: '#FF1493' },
+        fontFamily: { display: ['Righteous', 'sans-serif'], sans: ['Poppins', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    .block-hover { transition: all 300ms ease; }
+    .block-hover:hover { transform: translateY(-4px) scale(1.02); }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 3px; background: #22C55E; transition: width 300ms ease; }
+    .nav-link:hover::after { width: 100%; }
+    .pattern-bg { background-image: radial-gradient(circle at 20% 50%, rgba(124,58,237,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,20,147,0.1) 0%, transparent 50%); }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+  </style>
+</head>
+<body class="bg-dark text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-dark/90 backdrop-blur-md border-b border-primary/20">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3"><img src="images/bbr-logo.png" alt="BBR Logo" class="h-10 w-auto"><span class="font-display text-xl text-white">BBR</span></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Home</a>
+        <a href="de-band.html" class="nav-link text-white/80 hover:text-white cursor-pointer">De Band</a>
+        <a href="repertoire.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Repertoire</a>
+        <a href="optredens.html" class="nav-link text-cta font-medium cursor-pointer">Optredens</a>
+        <a href="galerij.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Galerij</a>
+        <a href="jubileum.html" class="nav-link text-white/80 hover:text-white cursor-pointer">25 Jaar</a>
+        <a href="contact.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Contact</a>
+      </div>
+      <a href="contact.html" class="hidden md:inline-block bg-cta hover:bg-cta-hover text-dark font-semibold px-6 py-2 rounded-full transition-colors duration-200 cursor-pointer">Boek Ons</a>
+      <button id="menuBtn" class="md:hidden text-white cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Menu"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-dark-card border-t border-primary/20">
+      <div class="px-4 py-6 flex flex-col gap-4">
+        <a href="index.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Home</a>
+        <a href="de-band.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">De Band</a>
+        <a href="repertoire.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Repertoire</a>
+        <a href="optredens.html" class="text-cta font-medium text-lg cursor-pointer min-h-[44px] flex items-center">Optredens</a>
+        <a href="galerij.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Galerij</a>
+        <a href="jubileum.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">25 Jaar</a>
+        <a href="contact.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Contact</a>
+        <a href="contact.html" class="bg-cta text-dark font-semibold px-6 py-3 rounded-full text-center cursor-pointer">Boek Ons</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-24 pb-16 pattern-bg">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+      <p class="text-cta font-semibold uppercase tracking-wider mb-3">Agenda</p>
+      <h1 class="font-display text-5xl md:text-7xl text-white mb-6">Optredens</h1>
+      <p class="text-white/70 text-lg max-w-2xl mx-auto">Van Jazz in Duketown en het Fantastival in Oss tot jazzclubs als De Lievekamp, Brebl Nijmegen en Schouwburg Cuijk.</p>
+    </div>
+  </section>
+
+  <!-- Aankomend -->
+  <section class="py-20 bg-dark-card">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-display text-3xl md:text-4xl text-white text-center mb-12">Aankomende Optredens</h2>
+      
+      <div class="block-hover bg-dark/60 border-2 border-cta/40 rounded-2xl p-8 mb-6">
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+          <div class="bg-cta/20 rounded-xl px-8 py-6 text-center min-w-[120px]">
+            <p class="font-display text-4xl text-cta">8</p>
+            <p class="text-cta/80 font-medium text-lg">Maart</p>
+            <p class="text-cta/60">2026</p>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-display text-2xl text-white mb-2">Vidi Reo's Jazz Café</h3>
+            <p class="text-white/70 text-lg mb-4">Samen met onze zangeres Marij van den Boom spelen we in ons swingende Jazz Café!</p>
+            <div class="flex flex-wrap gap-3">
+              <span class="bg-primary/20 text-primary px-4 py-2 rounded-full font-medium flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Vidi Reo, Van Kesselplaats 2, Ravenstein
+              </span>
+              <span class="bg-accent/20 text-accent px-4 py-2 rounded-full font-medium flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                15:00 uur
+              </span>
+              <span class="bg-cta/20 text-cta px-4 py-2 rounded-full font-medium">Vrij entree</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eerdere locaties -->
+  <section class="py-20 pattern-bg">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-display text-3xl md:text-4xl text-white text-center mb-4">Waar we gespeeld hebben</h2>
+      <p class="text-white/70 text-center text-lg mb-12">Een selectie van podia en festivals waar BBR heeft opgetreden.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="block-hover bg-dark-card/80 border border-primary/20 rounded-2xl overflow-hidden">
+          <img src="images/brebl.jpg" alt="Brebl Nijmegen" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-6">
+            <h3 class="font-display text-xl text-white mb-2">Brebl Nijmegen</h3>
+            <p class="text-white/60">Culturele broedplaats in Nijmegen</p>
+          </div>
+        </div>
+        <div class="block-hover bg-dark-card/80 border border-cta/20 rounded-2xl overflow-hidden">
+          <div class="w-full h-48 bg-gradient-to-br from-primary/30 to-cta/30 flex items-center justify-center">
+            <span class="font-display text-3xl text-white/40">Jazz in Duketown</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-xl text-white mb-2">Jazz in Duketown</h3>
+            <p class="text-white/60">'s-Hertogenbosch</p>
+          </div>
+        </div>
+        <div class="block-hover bg-dark-card/80 border border-accent/20 rounded-2xl overflow-hidden">
+          <div class="w-full h-48 bg-gradient-to-br from-accent/30 to-pink/30 flex items-center justify-center">
+            <span class="font-display text-3xl text-white/40">Fantastival</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-xl text-white mb-2">Fantastival</h3>
+            <p class="text-white/60">Oss</p>
+          </div>
+        </div>
+        <div class="block-hover bg-dark-card/80 border border-secondary/20 rounded-2xl overflow-hidden">
+          <div class="w-full h-48 bg-gradient-to-br from-secondary/30 to-primary/30 flex items-center justify-center">
+            <span class="font-display text-2xl text-white/40">De Lievekamp</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-xl text-white mb-2">De Lievekamp</h3>
+            <p class="text-white/60">Oss</p>
+          </div>
+        </div>
+        <div class="block-hover bg-dark-card/80 border border-pink/20 rounded-2xl overflow-hidden">
+          <div class="w-full h-48 bg-gradient-to-br from-pink/30 to-accent/30 flex items-center justify-center">
+            <span class="font-display text-2xl text-white/40">Cultuurcafé</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-xl text-white mb-2">Schouwburg Cuijk</h3>
+            <p class="text-white/60">Cultuurcafé, Cuijk</p>
+          </div>
+        </div>
+        <div class="block-hover bg-dark-card/80 border border-cta/20 rounded-2xl overflow-hidden">
+          <img src="images/hero-band.jpeg" alt="BBR bij De Haard Oss" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-6">
+            <h3 class="font-display text-xl text-white mb-2">De Haard</h3>
+            <p class="text-white/60">Oss, april 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boek ons CTA -->
+  <section class="py-20 bg-dark-card">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-display text-3xl md:text-4xl text-white mb-6">Wil je ons boeken?</h2>
+      <p class="text-white/70 text-lg mb-8">BBR is beschikbaar voor festivals, evenementen, jazzclubs en privé-feesten. Neem contact met ons op!</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="mailto:info@bigbandravenstein.nl" class="bg-cta hover:bg-cta-hover text-dark font-bold px-8 py-4 rounded-full text-lg transition-colors duration-200 cursor-pointer inline-flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Mail Ons
+        </a>
+        <a href="contact.html" class="border-2 border-primary hover:bg-primary/20 text-white font-bold px-8 py-4 rounded-full text-lg transition-colors duration-200 cursor-pointer">Contactpagina</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark border-t border-primary/20 py-12">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div><div class="flex items-center gap-3 mb-4"><img src="images/bbr-logo.png" alt="BBR Logo" class="h-10 w-auto"><span class="font-display text-xl">Bigband Ravenstein</span></div><p class="text-white/60">Dé bigband van Oost-Brabant sinds 1999.</p></div>
+        <div><h4 class="font-display text-lg text-white mb-4">Pagina's</h4><div class="space-y-2"><a href="de-band.html" class="block text-white/60 hover:text-white cursor-pointer">De Band</a><a href="repertoire.html" class="block text-white/60 hover:text-white cursor-pointer">Repertoire</a><a href="optredens.html" class="block text-white/60 hover:text-white cursor-pointer">Optredens</a><a href="galerij.html" class="block text-white/60 hover:text-white cursor-pointer">Galerij</a><a href="contact.html" class="block text-white/60 hover:text-white cursor-pointer">Contact</a></div></div>
+        <div><h4 class="font-display text-lg text-white mb-4">Contact</h4><div class="space-y-2 text-white/60"><p>📧 <a href="mailto:info@bigbandravenstein.nl" class="hover:text-white cursor-pointer">info@bigbandravenstein.nl</a></p><p>📞 <a href="tel:0680073518" class="hover:text-white cursor-pointer">06-80073518</a></p><p>📍 Vidi Reo, Van Kesselplaats 2, Ravenstein</p></div></div>
+      </div>
+      <div class="border-t border-primary/10 mt-8 pt-8 text-center text-white/40 text-sm"><p>&copy; 2026 Bigband Ravenstein. Gebouwd door <a href="https://www.code-lieshout.nl" class="text-primary hover:text-white cursor-pointer">Code Lieshout</a></p></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('menuBtn').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });</script>
+</body>
+</html>

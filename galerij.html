@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerij – Bigband Ravenstein</title>
+  <meta name="description" content="Foto's van Bigband Ravenstein — live optredens, concerten en backstage momenten.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="5a91d733-a2f0-40d6-a7c8-1c56af797db0"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#7C3AED', 'primary-dark': '#4C1D95', secondary: '#A78BFA', cta: '#22C55E', 'cta-hover': '#16A34A', dark: '#0F0A1E', 'dark-card': '#1A1030', accent: '#FFAA00', pink: '#FF1493' },
+        fontFamily: { display: ['Righteous', 'sans-serif'], sans: ['Poppins', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    .block-hover { transition: all 300ms ease; }
+    .block-hover:hover { transform: translateY(-4px) scale(1.02); }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 3px; background: #22C55E; transition: width 300ms ease; }
+    .nav-link:hover::after { width: 100%; }
+    .pattern-bg { background-image: radial-gradient(circle at 20% 50%, rgba(124,58,237,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,20,147,0.1) 0%, transparent 50%); }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    .lightbox-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 100; justify-content: center; align-items: center; cursor: pointer; }
+    .lightbox-overlay.active { display: flex; }
+    .lightbox-overlay img { max-width: 90%; max-height: 90%; object-fit: contain; }
+  </style>
+</head>
+<body class="bg-dark text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-dark/90 backdrop-blur-md border-b border-primary/20">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3"><img src="images/bbr-logo.png" alt="BBR Logo" class="h-10 w-auto"><span class="font-display text-xl text-white">BBR</span></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Home</a>
+        <a href="de-band.html" class="nav-link text-white/80 hover:text-white cursor-pointer">De Band</a>
+        <a href="repertoire.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Repertoire</a>
+        <a href="optredens.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Optredens</a>
+        <a href="galerij.html" class="nav-link text-cta font-medium cursor-pointer">Galerij</a>
+        <a href="jubileum.html" class="nav-link text-white/80 hover:text-white cursor-pointer">25 Jaar</a>
+        <a href="contact.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Contact</a>
+      </div>
+      <a href="contact.html" class="hidden md:inline-block bg-cta hover:bg-cta-hover text-dark font-semibold px-6 py-2 rounded-full transition-colors duration-200 cursor-pointer">Boek Ons</a>
+      <button id="menuBtn" class="md:hidden text-white cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Menu"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-dark-card border-t border-primary/20">
+      <div class="px-4 py-6 flex flex-col gap-4">
+        <a href="index.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Home</a>
+        <a href="de-band.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">De Band</a>
+        <a href="repertoire.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Repertoire</a>
+        <a href="optredens.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Optredens</a>
+        <a href="galerij.html" class="text-cta font-medium text-lg cursor-pointer min-h-[44px] flex items-center">Galerij</a>
+        <a href="jubileum.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">25 Jaar</a>
+        <a href="contact.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Contact</a>
+        <a href="contact.html" class="bg-cta text-dark font-semibold px-6 py-3 rounded-full text-center cursor-pointer">Boek Ons</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-24 pb-16 pattern-bg">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+      <p class="text-cta font-semibold uppercase tracking-wider mb-3">In Beeld</p>
+      <h1 class="font-display text-5xl md:text-7xl text-white mb-6">Galerij</h1>
+      <p class="text-white/70 text-lg">Klik op een foto om te vergroten</p>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="py-20 bg-dark-card">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+        
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/hero-band.jpeg" alt="Bigband Ravenstein bij De Haard Oss" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">De Haard, Oss — 2023</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/bigband-totaal.jpg" alt="Volledige formatie BBR" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Volledige formatie</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/trompetten.jpg" alt="Trompetsectie" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Trompetsectie</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/trompetten-2.jpg" alt="Trompetten close-up" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Trompetten</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/trombones.jpg" alt="Trombonesectie" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Trombonesectie</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/trombones-2.jpg" alt="Trombones" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Trombones</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/sacha-drums.jpg" alt="Sacha Boret aan de drums" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Sacha Boret — Drums</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/herman.jpg" alt="Herman" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Herman</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/frans-1.jpg" alt="Frans" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Frans</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/bigband-2.jpg" alt="BBR live" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Live optreden</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/web01.jpg" alt="BBR concert" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Concert</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/web03.jpg" alt="BBR muzikanten" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Muzikanten</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/web04.jpg" alt="BBR optreden" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Optreden</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/web05.jpg" alt="BBR performance" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Performance</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/concert-222cr.jpg" alt="BBR in concert" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">In concert</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/brebl.jpg" alt="BBR bij Brebl Nijmegen" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Brebl, Nijmegen</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/img-1657.jpeg" alt="BBR foto" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">BBR</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/teaser.jpg" alt="BBR Golden Jazz teaser" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">Golden Jazz</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/image-2026-02.png" alt="BBR 2026" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">2026</p></div>
+        </div>
+
+        <div class="block-hover rounded-2xl overflow-hidden cursor-pointer break-inside-avoid" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/image-2023-01.png" alt="BBR 2023" class="w-full object-cover" loading="lazy">
+          <div class="bg-dark/80 px-4 py-2"><p class="text-white/80 text-sm">2023</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark border-t border-primary/20 py-12">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div><div class="flex items-center gap-3 mb-4"><img src="images/bbr-logo.png" alt="BBR Logo" class="h-10 w-auto"><span class="font-display text-xl">Bigband Ravenstein</span></div><p class="text-white/60">Dé bigband van Oost-Brabant sinds 1999.</p></div>
+        <div><h4 class="font-display text-lg text-white mb-4">Pagina's</h4><div class="space-y-2"><a href="de-band.html" class="block text-white/60 hover:text-white cursor-pointer">De Band</a><a href="repertoire.html" class="block text-white/60 hover:text-white cursor-pointer">Repertoire</a><a href="optredens.html" class="block text-white/60 hover:text-white cursor-pointer">Optredens</a><a href="galerij.html" class="block text-white/60 hover:text-white cursor-pointer">Galerij</a><a href="contact.html" class="block text-white/60 hover:text-white cursor-pointer">Contact</a></div></div>
+        <div><h4 class="font-display text-lg text-white mb-4">Contact</h4><div class="space-y-2 text-white/60"><p>📧 <a href="mailto:info@bigbandravenstein.nl" class="hover:text-white cursor-pointer">info@bigbandravenstein.nl</a></p><p>📞 <a href="tel:0680073518" class="hover:text-white cursor-pointer">06-80073518</a></p><p>📍 Vidi Reo, Van Kesselplaats 2, Ravenstein</p></div></div>
+      </div>
+      <div class="border-t border-primary/10 mt-8 pt-8 text-center text-white/40 text-sm"><p>&copy; 2026 Bigband Ravenstein. Gebouwd door <a href="https://www.code-lieshout.nl" class="text-primary hover:text-white cursor-pointer">Code Lieshout</a></p></div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+    <img id="lightboxImg" src="" alt="Foto vergroting">
+  </div>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
+    function openLightbox(el) { document.getElementById('lightboxImg').src = el.src; document.getElementById('lightbox').classList.add('active'); }
+    function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+</body>
+</html>

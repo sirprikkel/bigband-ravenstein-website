@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25 Jaar BBR – Bigband Ravenstein</title>
+  <meta name="description" content="Jubileum 25 jaar Bigband Ravenstein — een kwart eeuw jazz in Oost-Brabant, gevierd met special guest Bram van de Glind.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="5a91d733-a2f0-40d6-a7c8-1c56af797db0"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#7C3AED', 'primary-dark': '#4C1D95', secondary: '#A78BFA', cta: '#22C55E', 'cta-hover': '#16A34A', dark: '#0F0A1E', 'dark-card': '#1A1030', accent: '#FFAA00', pink: '#FF1493' },
+        fontFamily: { display: ['Righteous', 'sans-serif'], sans: ['Poppins', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    .block-hover { transition: all 300ms ease; }
+    .block-hover:hover { transform: translateY(-4px) scale(1.02); }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 3px; background: #22C55E; transition: width 300ms ease; }
+    .nav-link:hover::after { width: 100%; }
+    .pattern-bg { background-image: radial-gradient(circle at 30% 40%, rgba(255,170,0,0.15) 0%, transparent 50%), radial-gradient(circle at 70% 60%, rgba(124,58,237,0.15) 0%, transparent 50%); }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    @keyframes shimmer { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    .gold-shimmer { background: linear-gradient(135deg, #FFAA00, #FFD700, #FFAA00, #FFD700); background-size: 300% 300%; animation: shimmer 4s ease infinite; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  </style>
+</head>
+<body class="bg-dark text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-dark/90 backdrop-blur-md border-b border-primary/20">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3"><img src="images/bbr-logo.png" alt="BBR Logo" class="h-10 w-auto"><span class="font-display text-xl text-white">BBR</span></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Home</a>
+        <a href="de-band.html" class="nav-link text-white/80 hover:text-white cursor-pointer">De Band</a>
+        <a href="repertoire.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Repertoire</a>
+        <a href="optredens.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Optredens</a>
+        <a href="galerij.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Galerij</a>
+        <a href="jubileum.html" class="nav-link text-cta font-medium cursor-pointer">25 Jaar</a>
+        <a href="contact.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Contact</a>
+      </div>
+      <a href="contact.html" class="hidden md:inline-block bg-cta hover:bg-cta-hover text-dark font-semibold px-6 py-2 rounded-full transition-colors duration-200 cursor-pointer">Boek Ons</a>
+      <button id="menuBtn" class="md:hidden text-white cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Menu"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-dark-card border-t border-primary/20">
+      <div class="px-4 py-6 flex flex-col gap-4">
+        <a href="index.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Home</a>
+        <a href="de-band.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">De Band</a>
+        <a href="repertoire.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Repertoire</a>
+        <a href="optredens.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Optredens</a>
+        <a href="galerij.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Galerij</a>
+        <a href="jubileum.html" class="text-cta font-medium text-lg cursor-pointer min-h-[44px] flex items-center">25 Jaar</a>
+        <a href="contact.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Contact</a>
+        <a href="contact.html" class="bg-cta text-dark font-semibold px-6 py-3 rounded-full text-center cursor-pointer">Boek Ons</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-24 pb-16 pattern-bg">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+      <p class="text-accent font-semibold uppercase tracking-wider mb-3">1999 – 2024</p>
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl mb-6">
+        <span class="gold-shimmer">25 Jaar</span><br>
+        <span class="text-white">Bigband Ravenstein</span>
+      </h1>
+      <p class="text-white/70 text-lg max-w-2xl mx-auto">Een kwart eeuw jazz, swing en passie uit Oost-Brabant.</p>
+    </div>
+  </section>
+
+  <!-- Logo -->
+  <section class="py-12 bg-dark-card">
+    <div class="max-w-md mx-auto px-4 text-center">
+      <img src="images/bbr-logo.png" alt="BBR 25 jaar jubileum logo" class="w-full max-w-xs mx-auto" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Jubileumconcert -->
+  <section class="py-20 pattern-bg">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-display text-3xl md:text-4xl text-white text-center mb-12">Jubileumconcert</h2>
+      
+      <div class="bg-dark-card/80 border-2 border-accent/30 rounded-2xl p-8 md:p-12">
+        <div class="text-center mb-8">
+          <div class="inline-block bg-accent/20 rounded-xl px-8 py-4 mb-6">
+            <p class="font-display text-2xl text-accent">Zaterdag 2 november 2024</p>
+          </div>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-4">Jubileumconcert 25 jaar Bigband Ravenstein</h3>
+          <p class="text-white/70 text-lg">met special guest <span class="text-accent font-semibold">Bram van de Glind</span></p>
+        </div>
+
+        <div class="border-t border-accent/20 pt-8 mt-8">
+          <h4 class="font-display text-xl text-accent mb-4">Over Bram van de Glind</h4>
+          <div class="space-y-4 text-white/80 leading-relaxed">
+            <p>Bram groeide op in Lith, waar hij in de fanfare de fijne kneepjes van het vak trompettist kon leren. Improvisatie en lichte muziek bleken een grote passie te zijn. Het was docent Angelo Verploegen die hem definitief over de streep trok naar het Utrechts Conservatorium te gaan.</p>
+            <p>Vanaf dit moment speelde Bram zich snel in de kijker bij diverse projecten, met als hoogtepunt het Snarky Puppy programma van het Jong Metropole. Zijn deelname werd bekroond met het winnen van de <span class="text-accent font-medium">Keep an Eye Outstanding Talent Award</span>.</p>
+            <p>Met deze prijs kon hij zijn droombugel laten bouwen door Hub van Laar. Met dit instrument verzilverde hij zijn nominatie voor de <span class="text-accent font-medium">Conservatorium Talent Award 2021</span>, een competitie tussen alle Nederlandse Conservatoria.</p>
+            <p>In 2023 won hij de <span class="text-accent font-medium">Keep an Eye Rosa Spierhuis Young Talent Award</span>.</p>
+          </div>
+        </div>
+
+        <div class="border-t border-accent/20 pt-8 mt-8">
+          <h4 class="font-display text-xl text-accent mb-6">Luister naar Bram's debuutalbum 'Mirrors'</h4>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="https://music.youtube.com/channel/UCC3sgpLfpMu_l1NvX9N3QSg" target="_blank" rel="noopener" class="bg-pink/20 hover:bg-pink/30 text-pink font-semibold px-6 py-3 rounded-full transition-colors duration-200 cursor-pointer inline-flex items-center gap-2">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><polygon fill="#0F0A1E" points="9.545,15.568 15.818,12 9.545,8.432"/></svg>
+              YouTube Music
+            </a>
+            <a href="https://open.spotify.com/album/1Ay15XzcsEQpb3Bh0ZIKA8" target="_blank" rel="noopener" class="bg-cta/20 hover:bg-cta/30 text-cta font-semibold px-6 py-3 rounded-full transition-colors duration-200 cursor-pointer inline-flex items-center gap-2">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+              Spotify
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="py-20 bg-dark-card">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-display text-3xl md:text-4xl text-white text-center mb-12">Mijlpalen</h2>
+      <div class="space-y-8">
+        <div class="flex gap-6">
+          <div class="flex-shrink-0 w-24 text-right">
+            <span class="font-display text-2xl text-accent">1999</span>
+          </div>
+          <div class="w-1 bg-accent/30 relative"><div class="absolute top-2 -left-1.5 w-4 h-4 bg-accent rounded-full"></div></div>
+          <div class="pb-4"><p class="text-white text-lg">Oprichting Bigband Ravenstein</p></div>
+        </div>
+        <div class="flex gap-6">
+          <div class="flex-shrink-0 w-24 text-right">
+            <span class="font-display text-2xl text-primary">2004</span>
+          </div>
+          <div class="w-1 bg-primary/30 relative"><div class="absolute top-2 -left-1.5 w-4 h-4 bg-primary rounded-full"></div></div>
+          <div class="pb-4"><p class="text-white text-lg">Rob van den Hoven neemt de artistieke leiding over</p></div>
+        </div>
+        <div class="flex gap-6">
+          <div class="flex-shrink-0 w-24 text-right">
+            <span class="font-display text-2xl text-cta">2024</span>
+          </div>
+          <div class="w-1 bg-cta/30 relative"><div class="absolute top-2 -left-1.5 w-4 h-4 bg-cta rounded-full"></div></div>
+          <div class="pb-4">
+            <p class="text-white text-lg">Jubileumconcert 25 jaar BBR met Bram van de Glind</p>
+            <p class="text-white/60">Rob van Reijmersdal neemt de artistieke leiding over</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark border-t border-primary/20 py-12">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div><div class="flex items-center gap-3 mb-4"><img src="images/bbr-logo.png" alt="BBR Logo" class="h-10 w-auto"><span class="font-display text-xl">Bigband Ravenstein</span></div><p class="text-white/60">Dé bigband van Oost-Brabant sinds 1999.</p></div>
+        <div><h4 class="font-display text-lg text-white mb-4">Pagina's</h4><div class="space-y-2"><a href="de-band.html" class="block text-white/60 hover:text-white cursor-pointer">De Band</a><a href="repertoire.html" class="block text-white/60 hover:text-white cursor-pointer">Repertoire</a><a href="optredens.html" class="block text-white/60 hover:text-white cursor-pointer">Optredens</a><a href="galerij.html" class="block text-white/60 hover:text-white cursor-pointer">Galerij</a><a href="contact.html" class="block text-white/60 hover:text-white cursor-pointer">Contact</a></div></div>
+        <div><h4 class="font-display text-lg text-white mb-4">Contact</h4><div class="space-y-2 text-white/60"><p>📧 <a href="mailto:info@bigbandravenstein.nl" class="hover:text-white cursor-pointer">info@bigbandravenstein.nl</a></p><p>📞 <a href="tel:0680073518" class="hover:text-white cursor-pointer">06-80073518</a></p><p>📍 Vidi Reo, Van Kesselplaats 2, Ravenstein</p></div></div>
+      </div>
+      <div class="border-t border-primary/10 mt-8 pt-8 text-center text-white/40 text-sm"><p>&copy; 2026 Bigband Ravenstein. Gebouwd door <a href="https://www.code-lieshout.nl" class="text-primary hover:text-white cursor-pointer">Code Lieshout</a></p></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('menuBtn').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });</script>
+</body>
+</html>

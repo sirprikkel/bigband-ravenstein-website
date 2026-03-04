@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repertoire – Bigband Ravenstein</title>
+  <meta name="description" content="Het repertoire van Bigband Ravenstein — van Duke Ellington en Wayne Shorter tot Snarky Puppy en Vulfpeck.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="5a91d733-a2f0-40d6-a7c8-1c56af797db0"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#7C3AED', 'primary-dark': '#4C1D95', secondary: '#A78BFA', cta: '#22C55E', 'cta-hover': '#16A34A', dark: '#0F0A1E', 'dark-card': '#1A1030', accent: '#FFAA00', pink: '#FF1493' },
+        fontFamily: { display: ['Righteous', 'sans-serif'], sans: ['Poppins', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    .block-hover { transition: all 300ms ease; }
+    .block-hover:hover { transform: translateY(-4px) scale(1.02); }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 3px; background: #22C55E; transition: width 300ms ease; }
+    .nav-link:hover::after { width: 100%; }
+    .pattern-bg { background-image: radial-gradient(circle at 20% 50%, rgba(124,58,237,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,20,147,0.1) 0%, transparent 50%); }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+  </style>
+</head>
+<body class="bg-dark text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-dark/90 backdrop-blur-md border-b border-primary/20">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3"><img src="images/bbr-logo.png" alt="BBR Logo" class="h-10 w-auto"><span class="font-display text-xl text-white">BBR</span></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Home</a>
+        <a href="de-band.html" class="nav-link text-white/80 hover:text-white cursor-pointer">De Band</a>
+        <a href="repertoire.html" class="nav-link text-cta font-medium cursor-pointer">Repertoire</a>
+        <a href="optredens.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Optredens</a>
+        <a href="galerij.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Galerij</a>
+        <a href="jubileum.html" class="nav-link text-white/80 hover:text-white cursor-pointer">25 Jaar</a>
+        <a href="contact.html" class="nav-link text-white/80 hover:text-white cursor-pointer">Contact</a>
+      </div>
+      <a href="contact.html" class="hidden md:inline-block bg-cta hover:bg-cta-hover text-dark font-semibold px-6 py-2 rounded-full transition-colors duration-200 cursor-pointer">Boek Ons</a>
+      <button id="menuBtn" class="md:hidden text-white cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Menu"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-dark-card border-t border-primary/20">
+      <div class="px-4 py-6 flex flex-col gap-4">
+        <a href="index.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Home</a>
+        <a href="de-band.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">De Band</a>
+        <a href="repertoire.html" class="text-cta font-medium text-lg cursor-pointer min-h-[44px] flex items-center">Repertoire</a>
+        <a href="optredens.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Optredens</a>
+        <a href="galerij.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Galerij</a>
+        <a href="jubileum.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">25 Jaar</a>
+        <a href="contact.html" class="text-white/80 text-lg cursor-pointer min-h-[44px] flex items-center">Contact</a>
+        <a href="contact.html" class="bg-cta text-dark font-semibold px-6 py-3 rounded-full text-center cursor-pointer">Boek Ons</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-24 pb-16 pattern-bg">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+      <p class="text-cta font-semibold uppercase tracking-wider mb-3">Van Klassiek tot Modern</p>
+      <h1 class="font-display text-5xl md:text-7xl text-white mb-6">Repertoire</h1>
+      <p class="text-white/70 text-lg max-w-2xl mx-auto">Een breed scala aan uiteenlopende jazz stijlen. Van 'klassieke' jazz en blues tot fusion stijlen, waarin ook rock en pop aan bod komen.</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-12 bg-dark-card">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+      <p class="text-white/80 text-lg leading-relaxed">Muziek van meesters als Duke Ellington en Wayne Shorter tot die van populaire eigentijdse formaties als Snarky Puppy en Gordon Goodwins Big Phat Band. Regelmatig wordt het repertoire ververst met nieuwe uitdagingen.</p>
+    </div>
+  </section>
+
+  <!-- Repertoire lijst -->
+  <section class="py-20 pattern-bg">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-display text-3xl md:text-4xl text-white text-center mb-12">Een greep uit ons repertoire</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <div class="block-hover bg-dark-card/80 border border-primary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-primary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">But Not For Me</p><p class="text-white/50 text-sm">George Gershwin / arr. T. Mansourian</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-cta/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-cta/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-cta font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Count Bubba's Revenge</p><p class="text-white/50 text-sm">Gordon Goodwin</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-accent/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-accent font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Butter Ball</p><p class="text-white/50 text-sm">Michael Davis</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-pink/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-pink/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-pink font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Dean Town</p><p class="text-white/50 text-sm">Vulfpeck</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-secondary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-secondary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-secondary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Heartland</p><p class="text-white/50 text-sm">Pat Metheny / arr. Herbolzheimer</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-primary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-primary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Is dit alles?</p><p class="text-white/50 text-sm">Vrienten</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-cta/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-cta/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-cta font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Nutville</p><p class="text-white/50 text-sm">Horace Silver</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-accent/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-accent font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Samantha</p><p class="text-white/50 text-sm">Sammy Nestico</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-pink/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-pink/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-pink font-display">♪</span></div>
+          <div><p class="font-semibold text-white">The Joy of Cookin'</p><p class="text-white/50 text-sm">Sammy Nestico</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-secondary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-secondary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-secondary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Waltz for Dizz</p><p class="text-white/50 text-sm">Rob Pronk</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-primary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-primary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Take the A-Train</p><p class="text-white/50 text-sm">Strayhorn – as performed by Nikki Yanofsky</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-cta/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-cta/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-cta font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Stolen Moments</p><p class="text-white/50 text-sm">Oliver Nelson</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-accent/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-accent font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Elephants</p><p class="text-white/50 text-sm">Ruben Hein</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-pink/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-pink/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-pink font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Blues in the Night</p><p class="text-white/50 text-sm"></p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-secondary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-secondary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-secondary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Caravan</p><p class="text-white/50 text-sm">Duke Ellington / arr. Rob van den Hoven</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-primary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-primary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">New Rochelle</p><p class="text-white/50 text-sm">Bob Mintzer</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-cta/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-cta/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-cta font-display">♪</span></div>
+          <div><p class="font-semibold text-white">I Wish You Love</p><p class="text-white/50 text-sm">Albert Beach / Charles Trenet</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-accent/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-accent font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Young Stuff</p><p class="text-white/50 text-sm">Michael League</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-pink/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-pink/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-pink font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Blue Lew</p><p class="text-white/50 text-sm">Jerry van Rooijen / arr. Rob van den Hoven</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-secondary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-secondary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-secondary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Booza Me Mucho</p><p class="text-white/50 text-sm">Bart Lust</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-primary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-primary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Always and Forever</p><p class="text-white/50 text-sm">Pat Metheny</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-cta/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-cta/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-cta font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Infant Eyes</p><p class="text-white/50 text-sm">Wayne Shorter / arr. T. Mansourian</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-accent/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-accent font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Let's Face the Music and Dance</p><p class="text-white/50 text-sm">Irving Berlin</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-pink/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-pink/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-pink font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Chinatown, My Chinatown</p><p class="text-white/50 text-sm">Jean Schwartz</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-secondary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-secondary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-secondary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Blues in Frankies Flat</p><p class="text-white/50 text-sm">Frank Foster</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-primary/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-primary font-display">♪</span></div>
+          <div><p class="font-semibold text-white">For the Time Being</p><p class="text-white/50 text-sm">Bert Joris</p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-cta/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-cta/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-cta font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Travelin' Blues</p><p class="text-white/50 text-sm"></p></div>
+        </div>
+
+        <div class="block-hover bg-dark-card/80 border border-accent/20 rounded-xl p-5 flex items-center gap-4">
+          <div class="w-10 h-10 bg-accent/20 rounded-lg flex-shrink-0 flex items-center justify-center"><span class="text-accent font-display">♪</span></div>
+          <div><p class="font-semibold text-white">Trav'lin' Light</p><p class="text-white/50 text-sm"></p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-dark-card">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-display text-3xl md:text-4xl text-white mb-6">Wil je ons horen spelen?</h2>
+      <p class="text-white/70 text-lg mb-8">Bekijk onze aankomende optredens of boek ons voor jouw evenement.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="optredens.html" class="bg-cta hover:bg-cta-hover text-dark font-bold px-8 py-4 rounded-full text-lg transition-colors duration-200 cursor-pointer">Bekijk Optredens</a>
+        <a href="contact.html" class="border-2 border-primary hover:bg-primary/20 text-white font-bold px-8 py-4 rounded-full text-lg transition-colors duration-200 cursor-pointer">Boek Ons</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark border-t border-primary/20 py-12">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div><div class="flex items-center gap-3 mb-4"><img src="images/bbr-logo.png" alt="BBR Logo" class="h-10 w-auto"><span class="font-display text-xl">Bigband Ravenstein</span></div><p class="text-white/60">Dé bigband van Oost-Brabant sinds 1999.</p></div>
+        <div><h4 class="font-display text-lg text-white mb-4">Pagina's</h4><div class="space-y-2"><a href="de-band.html" class="block text-white/60 hover:text-white cursor-pointer">De Band</a><a href="repertoire.html" class="block text-white/60 hover:text-white cursor-pointer">Repertoire</a><a href="optredens.html" class="block text-white/60 hover:text-white cursor-pointer">Optredens</a><a href="galerij.html" class="block text-white/60 hover:text-white cursor-pointer">Galerij</a><a href="contact.html" class="block text-white/60 hover:text-white cursor-pointer">Contact</a></div></div>
+        <div><h4 class="font-display text-lg text-white mb-4">Contact</h4><div class="space-y-2 text-white/60"><p>📧 <a href="mailto:info@bigbandravenstein.nl" class="hover:text-white cursor-pointer">info@bigbandravenstein.nl</a></p><p>📞 <a href="tel:0680073518" class="hover:text-white cursor-pointer">06-80073518</a></p><p>📍 Vidi Reo, Van Kesselplaats 2, Ravenstein</p></div></div>
+      </div>
+      <div class="border-t border-primary/10 mt-8 pt-8 text-center text-white/40 text-sm"><p>&copy; 2026 Bigband Ravenstein. Gebouwd door <a href="https://www.code-lieshout.nl" class="text-primary hover:text-white cursor-pointer">Code Lieshout</a></p></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('menuBtn').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });</script>
+</body>
+</html>
